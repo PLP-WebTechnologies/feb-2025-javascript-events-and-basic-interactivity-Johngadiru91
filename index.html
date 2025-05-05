@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Interactive Web Page</h1>
+    
+    <!-- Event Handling Section -->
+    <section id="event-handling">
+        <h2>Event Handling</h2>
+        <button id="click-button">Click Me</button>
+        <p id="click-message"></p>
+        <div id="hover-div">Hover over me</div>
+        <input type="text" id="keypress-input" placeholder="Type something">
+        <p id="keypress-output"></p>
+        <p id="secret-message" style="display: none;">Secret message revealed!</p>
+    </section>
+    
+    <!-- Interactive Elements Section -->
+    <section id="interactive-elements">
+        <h2>Interactive Elements</h2>
+        <button id="dynamic-button">Click Me</button>
+        <div id="slideshow">
+            <img src="image/dima-solomin-7_U0V12QA0J08-unsplash.jpg" alt="Blue wave pattern" style="width: 100%; height: auto;">
+            <img src="image/pawel-czerwinski-NjBmdM59thU-unsplash.jpg" alt="Dark scene" style="width: 100%; height: auto;">
+            <button id="prev-button">Previous</button>
+            <button id="next-button">Next</button>
+        </div>
+        <div id="tabs">
+            <div class="tab" data-tab="tab1">Tab 1</div>
+            <div class="tab" data-tab="tab2">Tab 2</div>
+            <div class="tab" data-tab="tab3">Tab 3</div>
+            <div id="tab1" class="tab-content">Content for Tab 1</div>
+            <div id="tab2" class="tab-content">Content for Tab 2</div>
+            <div id="tab3" class="tab-content">Content for Tab 3</div>
+        </div>
+    </section>
+    
+    <!-- Form Validation Section -->
+    <section id="form-validation">
+        <h2>Form Validation</h2>
+        <form id="validation-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <span id="name-error" class="error"></span>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <span id="email-error" class="error"></span>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <span id="password-error" class="error"></span>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
